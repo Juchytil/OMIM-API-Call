@@ -20,10 +20,12 @@ Replace the placeholder OMIM_API_KEY in the script with your own key:
 
 ## USAGE
 Run the script via command line by specifying a gene name.
+
 example input:
 python OMIM_API_call.py CFTR
 
 example output:
+
 {
   "mimNumber": 219700,
   "preferredTitle": "CYSTIC FIBROSIS; CF",
