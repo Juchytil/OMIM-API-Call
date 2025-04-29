@@ -21,27 +21,20 @@ You must have an OMIM API key to use this script. You can get one by following t
 ## USAGE
 Run the script via command line by specifying a gene name.
 
-example input:
+EXAMPLE INPUT:
 
-python OMIM_API_call.py CFTR
+    python OMIM_API_call.py CFTR
 
-example output:
+EXAMPLE OUTPUT:
 
-{
-
-  "mimNumber": 219700,
-  
-  "preferredTitle": "CYSTIC FIBROSIS; CF",
-  
-  "Inheritance": "Autosomal recessive",
-  
-  "Respiratory": "Recurrent respiratory infections; Chronic cough; Nasal polyps",
-  
-  "Digestive": "Pancreatic insufficiency; Meconium ileus",
-  
-  ...
-  
-}
+    {
+    "mimNumber": 219700,
+    "preferredTitle": "CYSTIC FIBROSIS; CF",
+    "Inheritance": "Autosomal recessive",
+    "Respiratory": "Recurrent respiratory infections; Chronic cough; Nasal polyps",
+    "Digestive": "Pancreatic insufficiency; Meconium ileus",
+    ...
+    }
 
 ## FUNCTION BREAKDOWN
 - get_omim_numbers(gene_name) – Fetches all phenotype MIM numbers related to the gene.
