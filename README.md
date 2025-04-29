@@ -8,15 +8,15 @@ Given a gene symbol (e.g., CFTR), the script:
 3. Prints the clinical synopses in formatted JSON.
 
 ## REQUIREMENTS
-Python 3.7+
-Internet connection
-OMIM API key
+- Python 3.7+
+- Internet connection
+- OMIM API key
 
 ## OMIM API Key
 You must have an OMIM API key to use this script. You can get one by following the steps below.
-Register for an account: https://omim.org/register
-Request an API key here: https://omim.org/help/api
-Replace the placeholder OMIM_API_KEY in the script with your own key:
+- Register for an account: https://omim.org/register
+- Request an API key here: https://omim.org/help/api
+- Replace the placeholder OMIM_API_KEY in the script with your own key:
 
 ## USAGE
 Run the script via command line by specifying a gene name.
@@ -25,7 +25,6 @@ example input:
 python OMIM_API_call.py CFTR
 
 example output:
-
 {
   "mimNumber": 219700,
   "preferredTitle": "CYSTIC FIBROSIS; CF",
