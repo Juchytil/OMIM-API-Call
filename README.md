@@ -14,9 +14,9 @@ Given a gene symbol (e.g., CFTR), the script:
 
 ## OMIM API Key
 You must have an OMIM API key to use this script. You can get one by following the steps below.
-- Register for an account: https://omim.org/register
-- Request an API key here: https://omim.org/help/api
-- Replace the placeholder OMIM_API_KEY in the script with your own key:
+1. Register for an account: https://omim.org/register
+2. Request an API key here: https://omim.org/help/api
+3. Replace the placeholder OMIM_API_KEY in the script with your own key:
 
 ## USAGE
 Run the script via command line by specifying a gene name.
@@ -35,11 +35,11 @@ example output:
 }
 
 ## FUNCTION BREAKDOWN
-get_omim_numbers(gene_name) – Fetches all phenotype MIM numbers related to the gene.
-get_clinical_synopsis(pheno_omim_id) – Returns the clinical synopsis for a given phenotype MIM ID.
-get_phenotype_map(gene_name) – Core API call to the OMIM GeneMap endpoint.
-get_nested_dict(keys, dictionary) – Helper function for navigating nested JSON.
+- get_omim_numbers(gene_name) – Fetches all phenotype MIM numbers related to the gene.
+- get_clinical_synopsis(pheno_omim_id) – Returns the clinical synopsis for a given phenotype MIM ID.
+- get_phenotype_map(gene_name) – Core API call to the OMIM GeneMap endpoint.
+- get_nested_dict(keys, dictionary) – Helper function for navigating nested JSON.
 
 ## NOTES
-The script prints only the first clinical synopsis returned for each phenotype (if available).
-If a clinical synopsis is not found, the script will log a message but continue.
+- The script prints only the first clinical synopsis returned for each phenotype (if available).
+- If a clinical synopsis is not found, the script will log a message but continue.
