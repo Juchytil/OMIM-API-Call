@@ -2,7 +2,7 @@ import requests
 import json
 import argparse
 
-OMIM_API_KEY = "GUwwCFBvQ4ezXZVJKMbs8w"
+OMIM_API_KEY = "YOUR_OMIM_API_KEY"
 
 ### Navigates through the JSON dictionaries to extract all OMIM numbers from GeneMapSearch API call
 def get_omim_numbers(gene_names: str):
